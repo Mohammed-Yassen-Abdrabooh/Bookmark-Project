@@ -9,6 +9,7 @@ if (localStorage.getItem('site') == null) {
   display();
 }
 
+console.log("hello");
 //============= create =============
 function createSite() {
   var site = {
