@@ -12,7 +12,7 @@ if (localStorage.getItem('site') == null) {
 //============= create =============
 function createSite() {
   var site = {
-    siName: capitalize(sName.value),
+    siName: sName.value,
     webURL: webLink.value
   }
   function checkName() {
@@ -86,7 +86,7 @@ function display() {
     trs += `
     <tr>
       <td>${i+1}</td>
-      <td>${siteList[i].siName}</td>
+      <td>${capitalize(siteList[i].siName)}</td>
       <td>
       <a target="_blank">
       <button class="visit btn fw-semibold px-3" onclick="visit(${i})"><i class="fa-solid fa-eye me-2"></i>Visit</button>
